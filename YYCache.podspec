@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'YYCache/*.{h,m}'
   s.public_header_files = 'YYCache/*.{h}'
+  s.resource_bundles = { 'YYCache' => ['YYCache/PrivacyInfo.xcprivacy'] }
   
   s.libraries = 'sqlite3'
   s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore' 
